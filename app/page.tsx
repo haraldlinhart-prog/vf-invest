@@ -48,7 +48,7 @@ export default function Home() {
               className={styles.quickAmountInput}
               type="text"
               inputMode="numeric"
-              placeholder="Gewünschter Betrag"
+              placeholder="Betrag"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               aria-label="Gewünschter Finanzierungsbetrag"
@@ -77,6 +77,33 @@ export default function Home() {
             <span className={styles.statNum}>1:1</span>
             <p className={styles.statLabel}>persönliche Betreuung statt Massenabfertigung</p>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.story}>
+        <div className={styles.storyInner}>
+          <div className={styles.sectionEyebrow}>Über VF-Invest</div>
+          <h2 className={styles.storyTitle}>Warum ein Wappen auf einer Finanzierungs-Website?</h2>
+          <p className={styles.storyText}>
+            Weil Verlässlichkeit für uns kein Marketing-Wort ist, sondern eine Haltung.
+            Das Wappen im Kopf dieser Seite steht für das, worauf es bei einer
+            Finanzierung wirklich ankommt: ein Versprechen, das man einhält, auch wenn
+            es niemand nachprüft.
+          </p>
+          <p className={styles.storyText}>
+            VF-Invest ist die Handelsmarke der Freiherr von Feldegg Vermögenswerte
+            GmbH mit Sitz in Leipzig. Wir sind kein anonymer Vergleichsrechner und
+            keine Bank, die Kredite nach Schema F durchwinkt oder ablehnt. Unter der
+            Leitung von Geschäftsführer Eric Kratzer prüfen wir jede Anfrage
+            persönlich — mit dem Ziel, eine Finanzierung zu finden, die zum
+            Unternehmen passt, nicht umgekehrt.
+          </p>
+          <p className={styles.storyText}>
+            Der deutsche Mittelstand lebt von Betrieben, die niemand kennt, aber
+            jeder braucht. Genau für diese Betriebe arbeiten wir: unaufgeregt,
+            direkt erreichbar und ohne die Warteschleifen, für die klassische
+            Bankhäuser bekannt sind.
+          </p>
         </div>
       </section>
 
