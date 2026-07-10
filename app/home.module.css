@@ -189,6 +189,44 @@
   margin-bottom: 0;
 }
 
+/* ── M&A Teaser ── */
+.maTeaser {
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.5rem;
+}
+.maTeaserInner {
+  max-width: 1040px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.maTeaserTitle {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+.maTeaserText {
+  font-size: 0.92rem;
+  max-width: 480px;
+}
+.maTeaserLink {
+  flex-shrink: 0;
+  color: var(--burgundy);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.maTeaserLink:hover {
+  text-decoration: underline;
+}
+
 /* ── Process ── */
 .process {
   display: flex;

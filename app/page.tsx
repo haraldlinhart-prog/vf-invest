@@ -107,6 +107,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.maTeaser}>
+        <div className={styles.maTeaserInner}>
+          <div>
+            <div className={styles.sectionEyebrow}>Weiterdenken</div>
+            <h2 className={styles.maTeaserTitle}>Planen Sie einen Zukauf oder Verkauf?</h2>
+            <p className={styles.maTeaserText}>
+              Eine passende Finanzierung ist ein Baustein von vielen, wenn ein Unternehmen
+              „M&amp;A-fähig" werden soll. Was die anderen sind — und wo wir ansetzen.
+            </p>
+          </div>
+          <a href="/ma-vorbereitung" className={styles.maTeaserLink}>
+            Mehr erfahren →
+          </a>
+        </div>
+      </section>
+
       <section className={styles.process}>
         <div className={styles.processInner}>
           <div className={styles.sectionEyebrow}>Ablauf</div>
