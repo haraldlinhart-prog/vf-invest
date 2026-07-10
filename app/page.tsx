@@ -27,7 +27,11 @@ export default function Home() {
 
       <section className={styles.hero}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/wappen.png" alt="Wappen Freiherr von Feldegg" className={styles.crest} />
+        <img
+          src="https://raw.githubusercontent.com/haraldlinhart-prog/vf-invest/main/public/wappen.png"
+          alt="Wappen Freiherr von Feldegg"
+          className={styles.crest}
+        />
         <div className={styles.eyebrow}>Unternehmensfinanzierung</div>
         <h1 className={styles.heroTitle}>
           Finanzierung, die zu <em>Ihrem</em> Unternehmen passt.
