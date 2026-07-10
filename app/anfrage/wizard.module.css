@@ -1,0 +1,334 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.headerBar {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.backLink {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.miniWordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.miniWordmark span {
+  color: var(--gold);
+}
+
+/* ── Progress ── */
+.progressWrap {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 2.75rem;
+}
+.progressTrack {
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--burgundy), var(--gold));
+  transition: width 0.35s ease;
+}
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.progressLabel strong {
+  color: var(--ink);
+}
+
+/* ── Card ── */
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2.75rem;
+  box-shadow: 0 12px 40px rgba(28, 26, 21, 0.05);
+}
+.stepEyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.stepTitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.stepSub {
+  margin-bottom: 2rem;
+  font-size: 0.94rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.labelOpt {
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.8rem 0.95rem;
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: var(--white);
+}
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.mono {
+  font-family: var(--font-mono);
+}
+.hint {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-top: 0.45rem;
+}
+
+.amountRow {
+  position: relative;
+}
+.amountCurrency {
+  position: absolute;
+  left: 0.95rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+}
+.amountInput {
+  padding-left: 2.1rem;
+}
+
+.chipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.6rem;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 0.75rem 0.6rem;
+  font-size: 0.86rem;
+  text-align: center;
+  color: var(--ink);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.chip:hover {
+  border-color: var(--gold);
+}
+.chipActive {
+  border-color: var(--gold);
+  background: #fbf3e2;
+  font-weight: 600;
+}
+
+.purposeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+.purposeCard {
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--ink);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.purposeCard:hover {
+  border-color: var(--gold);
+}
+.purposeCardActive {
+  border-color: var(--gold);
+  background: #fbf3e2;
+  font-weight: 600;
+}
+
+.autocompleteWrap {
+  position: relative;
+}
+.autocompleteList {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 0 8px 24px rgba(28, 26, 21, 0.1);
+  z-index: 10;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.autocompleteItem {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border: none;
+  background: none;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--line);
+}
+.autocompleteItem:last-child {
+  border-bottom: none;
+}
+.autocompleteItem:hover {
+  background: var(--parchment);
+}
+.autocompleteMeta {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.25rem;
+}
+.btnBack {
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  padding: 0.6rem 0;
+}
+.btnBack:hover {
+  color: var(--ink);
+}
+.btnNext {
+  background: var(--ink);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+.btnNext:hover {
+  background: var(--burgundy);
+}
+.btnNext:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: var(--burgundy);
+  font-size: 0.82rem;
+  margin-top: 1rem;
+}
+
+/* ── Summary ── */
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.summaryRow:last-child {
+  border-bottom: none;
+}
+.summaryLabel {
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.summaryValue {
+  text-align: right;
+  font-weight: 600;
+}
+
+/* ── Done ── */
+.doneWrap {
+  text-align: center;
+  padding: 1rem 0;
+}
+.doneSeal {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.6rem;
+  color: var(--gold);
+}
+.doneTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.doneText {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 1.75rem 1.25rem;
+  }
+  .purposeGrid {
+    grid-template-columns: 1fr;
+  }
+}
