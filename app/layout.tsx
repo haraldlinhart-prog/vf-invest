@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "./CookieBanner";
 
 const playfair = Playfair_Display({
   variable: "--font-display",
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang="de">
       <body className={`${playfair.variable} ${inter.variable} ${plexMono.variable}`}>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
