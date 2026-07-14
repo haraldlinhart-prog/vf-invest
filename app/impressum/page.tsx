@@ -23,20 +23,17 @@ export default function ImpressumPage() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700, margin: '2rem 0 0.7rem' }}>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
           <p style={{ fontSize: '0.95rem', marginBottom: '0.9rem' }}>
             <strong style={{ color: 'var(--ink)' }}>Freiherr von Feldegg Verm&ouml;genswerte GmbH</strong><br />
-            Handelsmarke: VF-Invest<br />
-            Karl-Heine-Str. 27<br />
-            04229 Leipzig
+            Hohnsdorfer Str.2<br />
+            06388 S&uuml;dliches-Anhalt
           </p>
           <p style={{ fontSize: '0.95rem', marginBottom: '0.9rem' }}>
-            Handelsregister: HRB 121955<br />
-            Registergericht: Amtsgericht Berlin-Charlottenburg<br />
+            AG Berlin HRB 121955 B<br />
+            Erlaubnis nach &sect; 34c GewO vom 16.10.2009 &ndash; Bezirksamt Charlottenburg-Wilmersdorf von Berlin<br />
             Gesch&auml;ftsf&uuml;hrer: Eric Kratzer
           </p>
           <p style={{ fontSize: '0.95rem', marginBottom: '0.9rem' }}>
-            USt-IdNr. gem&auml;&szlig; &sect; 27a UStG: DE267267319
-          </p>
-          <p style={{ fontSize: '0.95rem', marginBottom: '0.9rem' }}>
-            E-Mail: <a href="mailto:ek@vf-invest.de" style={{ color: 'var(--burgundy)' }}>ek@vf-invest.de</a>
+            Telefon: <a href="tel:+4934139296706" style={{ color: 'var(--burgundy)' }}>0341 &ndash; 39296706</a><br />
+            E-Mail: mail (AT) vf-invest.de
           </p>
 
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700, margin: '2rem 0 0.7rem' }}>Haftungsausschluss</h2>
