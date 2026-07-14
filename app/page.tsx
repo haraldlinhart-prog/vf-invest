@@ -176,9 +176,9 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span>© {new Date().getFullYear()} Freiherr von Feldegg Vermögenswerte GmbH · GF Eric Kratzer</span>
+          <span>© {new Date().getFullYear()} Freiherr von Feldegg Vermögenswerte GmbH · GF Eric Kratzer &middot; <a href="/impressum" style={{ color: 'inherit' }}>Impressum</a></span>
           <span className={styles.footerBadge}>Vor-Version</span>
-        </div>
+        </div> 
       </footer>
     </div>
   );
